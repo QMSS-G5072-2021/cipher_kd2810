@@ -1,4 +1,30 @@
 def cipher(text, shift, encrypt=True):
+    """Secure message through encryption.
+
+    Message is encrypted by shifting each letter by the
+    specified amount and direction.
+
+    Parameters
+    ----------
+    text : str
+        message to be encrypted.
+
+    shift : int
+        number of shifts added to each letter
+
+    encrypt : bool
+        direction of shift. (default = True)
+
+    Returns
+    -------
+    str
+        message encrypted by cipher technique
+
+    Examples
+    --------
+    >>> cipher("quiet! It's a secret", 2, True)
+    "swkgv! Kv'u c ugetgv"
+    """
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''
     for c in text:
